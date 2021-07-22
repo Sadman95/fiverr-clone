@@ -16,7 +16,7 @@ ul,ol{
 img{
     vertical-align: middle;
 }
-.container{
+.container-my{
     width: 90%;
     margin: auto;
 }
@@ -27,11 +27,9 @@ img{
     header{
         background-color: black;
     }
-    nav{
-        padding: 35px 0;
 
-    }
     .nav{
+        padding: 35px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -48,29 +46,51 @@ img{
     .menu{
         display: flex;
     }
-    .nav-link{
+    .nav-ref{
         padding: 0 10px;
         color: #fff;
         font-size: 18px;
         font-weight: 500;
         transition: all 0.3s ease-in;
     }
-    .nav-link:hover{
+    .nav-ref:hover{
         color: #5DC178;
     }
     .fa-globe{
         font-size: 16px;
         margin-right: 3px;
     }
-    .btn{
+    .btn-my{
         padding: 6px 22px;
-        color: #5DC178;
+        color: #fff;
         border: 1px solid #5DC178;
         border-radius: 5px;
 
     }
-    .btn:hover{
+    .btn-my:hover{
         color: #fff;
         background-color: #19A463;
         border: 1px solid transparent;
+    }
+    .heading-one{
+        font-size: 40px;
+        color: #fff;
+        padding-right: 120px;
+        font-weight: 700;
+    }
+    .btn-popular{
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding: 5px;
+        font-size: 11px;
+        font-weight: 900;
+    }
+    .btn-form{
+        background-color: #5DC178;
+        color: #fff;
+    }
+    .btn-form:hover{
+        background-color: #19A463;
+        color: #fff;
     }
