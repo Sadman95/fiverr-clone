@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -98,13 +100,13 @@ img{
     }
 
 .previous-arrow{
-    margin-right: 50%;
+    margin-right: 100%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
 }
 .next-arrow{
-    margin-left: 50%;
+    margin-left: 100%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
@@ -149,7 +151,37 @@ img{
     font-size: 11px;
 }
 
-
+/* testimonial */
+blockquote{
+    font-family: 'Oleo Script', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color: #003912;
+}
+.name-title::after{
+    position: absolute;
+    content: "";
+    left: 46%;
+    top: 20%;
+    height: 20px;
+    width: 1px;
+    background-color: lightgray;
+}
+picture{
+    position: relative;
+}
+.fa-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 
 
