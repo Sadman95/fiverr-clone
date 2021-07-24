@@ -182,6 +182,12 @@ picture{
     font-size: 30px;
     cursor: pointer;
 }
+/* logomaker */
+#logo{
+    background: url(../images/logomaker-banner/bannner-bg.png) left top no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 
