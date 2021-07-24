@@ -42,8 +42,9 @@ img{
         font-size: 38px;
         
     }
-    .logo span{
+    .logo sub{
         color: #19A463;
+        font-size: 64px;
     }
     .menu{
         display: flex;
@@ -100,13 +101,13 @@ img{
     }
 
 .previous-arrow{
-    margin-right: 12%;
+    margin-right: 130%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
 }
 .next-arrow{
-    margin-left: 12%;
+    margin-left: 130%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
