@@ -219,7 +219,11 @@ picture{
     background: url(../images/talent/talent-bg.png) left top no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20px 0;
+    padding: 120px 0 120px 100px;
+}
+.talent-txt{
+    font-size: 48px;
+    padding-bottom: 40px;
 }
 
 
