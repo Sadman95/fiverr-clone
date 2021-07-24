@@ -100,13 +100,13 @@ img{
     }
 
 .previous-arrow{
-    margin-right: 100%;
+    margin-right: 12%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
 }
 .next-arrow{
-    margin-left: 100%;
+    margin-left: 12%;
     background-color: black;
     padding: 30px;
     border-radius: 50%;
@@ -261,6 +261,10 @@ picture{
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
+    flex-wrap:wrap;
+}
+.bottom-left p{
+    margin-left: 16px;
 }
 .social-item{
     margin-left: 16px;
@@ -277,7 +281,6 @@ picture{
 .social-link{
     color: #7A7D85;
     font-size: 22px;
-
     
 }
 .social-item:hover .social-link{
@@ -287,6 +290,7 @@ picture{
     background-color: #EFEFF0;
     padding: 6px 10px;
     border-radius: 20%;
+    list-style: none;
 }
 .language a,.dollar a{
     font-size: 14px;
@@ -301,8 +305,21 @@ picture{
     .guide-col{
         text-align: center;
     }
+    .footer-lists{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bottom-left,.bottom-right{
+        flex-direction: column;
+        margin: auto;
+    }
+    .bottom-left p{
+        margin-left: 0px;
+    }
+    .bottom-right ul{
+        padding-left: 0px;
+    }
 }
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 992px) {
     .nav{
         position: relative;
     }
@@ -331,5 +348,11 @@ picture{
     }
     .menu{
         display: none;
+    }
+    .footer-lists{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bottom-left,.bottom-right{
+        margin: auto;
     }
 }
