@@ -220,13 +220,40 @@ picture{
     background-size: cover;
     background-position: center;
     padding: 120px 0 120px 100px;
+    margin-bottom: 120px;
 }
 .talent-txt{
     font-size: 48px;
     padding-bottom: 40px;
 }
+/* lists */
+#lists{
+    border-color: lightgrey;
+}
+.list-all{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+    padding: 64px 24px;
+}
+.list h6{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.list-item{
+    padding-bottom: 16px;
+}
+.list-link{
+    color: #7A7D85;
 
-
+}
+.list-link:hover{
+    text-decoration: underline;
+    color: #7A7D85;
+}
+.link-ext{
+    color: #B5B7BC;
+}
 
 /* meadia queries */
 @media screen  and (max-width: 688px) {
