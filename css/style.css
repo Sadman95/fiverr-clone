@@ -100,18 +100,8 @@ img{
         color: #fff;
     }
 
-.previous-arrow{
-    margin-right: 130%;
-    background-color: black;
-    padding: 30px;
-    border-radius: 50%;
-}
-.next-arrow{
-    margin-left: 130%;
-    background-color: black;
-    padding: 30px;
-    border-radius: 50%;
-}
+
+
 .menu-toggle{
     display: none;
 }
@@ -298,29 +288,7 @@ picture{
 }
 
 /* meadia queries */
-@media screen  and (max-width: 688px) {
-    .guide-row{
-        grid-template-columns: repeat(1,1fr);
-
-    }
-    .guide-col{
-        text-align: center;
-    }
-    .footer-lists{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .bottom-left,.bottom-right{
-        flex-direction: column;
-        margin: auto;
-    }
-    .bottom-left p{
-        margin-left: 0px;
-    }
-    .bottom-right ul{
-        padding-left: 0px;
-    }
-}
-@media screen and (max-width: 992px) {
+@media screen  and (min-width: 288px) and (max-width: 688px) {
     .nav{
         position: relative;
     }
@@ -341,19 +309,89 @@ picture{
         white-space: nowrap;
         background-color: navy;
     }
-    #check{
+    .check{
         display: none;
     }
-    #check:checked~.toggle-items{
+    .check:checked~.toggle-items{
         display: block;
     }
     .menu{
         display: none;
     }
+    .guide-row,.markret-place{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .guide-col{
+        text-align: center;
+    }
     .footer-lists{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bottom-left,.bottom-right{
+        flex-direction: column;
+        margin: auto;
+    }
+    .bottom-left p{
+        margin-left: 0px;
+    }
+    .bottom-right ul{
+        padding-left: 0px;
+    }
+    #logo{
+        background-position: right;
+    }
+    .talent-txt{
+        font-size: 32px;
+    }
+    .list{
+        text-align: center;
+        padding: 0px;
+    }
+}
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .nav{
+        position: relative;
+    }
+    .menu-toggle{
+        display: block;
+        z-index: 999;
+
+    }
+    .toggle-items{
+        display: none;
+        padding: 0;
+        position: absolute;
+        padding: 20px;
+        border-radius: 8px;
+        width: 70%;
+        text-align: left;
+        right: 0.5%;
+        white-space: nowrap;
+        background-color: navy;
+    }
+    .check{
+        display: none;
+    }
+    .check:checked~.toggle-items{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .markret-place{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .guide-row,.footer-lists{
         grid-template-columns: repeat(2,1fr);
     }
     .bottom-left,.bottom-right{
         margin: auto;
+    }
+    #talent{
+        background-position: right;
+    }
+    .talent-txt{
+        font-size: 40px;
     }
 }
