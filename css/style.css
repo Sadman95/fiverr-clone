@@ -217,6 +217,12 @@ picture{
     font-size: 48px;
     padding-bottom: 40px;
 }
+
+/* projects */
+#projects .card{
+    height: 300px;
+}
+
 /* lists */
 .footer-border-color{
     border-color: lightgrey;
